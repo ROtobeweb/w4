@@ -33,8 +33,8 @@ function result() {
   }
 
   if (document.getElementById("uk").checked) {
-    const weight = `${Math.round(300*0.0714286)} kg`;
-    const temperature = `摂氏${Math.round((94-32) * 5 / 9)} `;
+    const weight = `${Math.round(110/2.2046)} kg`;
+    const temperature = `摂氏${Math.round((30-32) * 5 / 9)} `;
     newStory = newStory.replace('華氏40', temperature);
     newStory = newStory.replace('110ポンド', weight);
   }
