@@ -32,8 +32,8 @@ function result() {
   }
 
   if (document.getElementById("uk").checked) {
-    const weight = `${Math.round(300*0.0714286)} stone`;
-    const temperature =  `${Math.round((94-32) * 5 / 9)} centigrade`;
+    const weight = `${Math.round(300*0.0714286)} kg`;
+    const temperature =  `$摂氏{Math.round((94-32) * 5 / 9)} `;
     newStory = newStory.replace('華氏40度', temperature);
     newStory = newStory.replace('110ポンド', weight);
   }
